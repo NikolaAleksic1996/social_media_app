@@ -1,0 +1,31 @@
+### GET ALL USER
+GET http://localhost:4000/api/user/
+
+###
+POST http://localhost:4000/api/user/add
+Content-Type: application/json
+
+{
+  "firstName": "Dejan",
+  "lastName": "Zivkovic"
+}
+
+###
+PUT http://localhost:4000/api/user/update/644a553656f68374bf796481
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDZlNTE0ZTQ2MTFkYzJiZGRkYjdiN2EiLCJmaXJzdE5hbWUiOiJEZWphbiIsImxhc3ROYW1lIjoiWml2a292aWMiLCJyb2xlIjoiYWRtaW4iLCJ0aW1lIjoxNjg1NzI1NDc0MjU3LCJpYXQiOjE2ODU3MjU0NzQsImV4cCI6MTY4NTgxMTg3NH0.qZrEIBOy5vj6SrTeSQurQUHALTU1nFrVwGJn2YueqCM
+
+{
+  "firstName": "John"
+}
+
+
+### GET SINGE USER
+
+GET http://localhost:4000/api/user/644a553656f68374bf796481
+
+
+### DELETE USER
+DELETE http://localhost:4000/api/user/delete/647e5e98f4dca2c15c847f7e
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDdlNjI3ZjIyNGMyNTViYjViM2QzZWMiLCJmaXJzdE5hbWUiOiJEemVuYWQiLCJsYXN0TmFtZSI6IkNhdGljIiwicm9sZSI6InVzZXIiLCJ0aW1lIjoxNjg2MDA0MzU0MDg5LCJpYXQiOjE2ODYwMDQzNTQsImV4cCI6MTY4NjA5MDc1NH0.efTwW_UjvAJRwLx2RigC-moNuUNIm3HRJrFKd-5u9sw
